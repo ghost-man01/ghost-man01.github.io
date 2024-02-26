@@ -88,9 +88,18 @@ const menu = [
         desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
     },
 
-   
+    {
+        id: 11,
+        title: "Fied Rice",
+        category: "Yashank",
+        price: 10.1,
+        img: "./images/item-9.jpeg",
+        desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+    },
 
-    
+
+
+
 ];
 
 
@@ -99,7 +108,7 @@ const sectionCenter = document.querySelector('.section-center');
 const container = document.querySelector('.btn-container');
 // Load Items
 window.addEventListener("DOMContentLoaded", function () {
-    
+
     displayMenuItems(menu);
     displayMenuButtons();
 });
@@ -135,34 +144,34 @@ function displayMenuButtons() {
             values.push(item.category);
         }
         return values;
-        
+
     }, ['all']
     );
-    
-    const categoryBtns = categories.map(function(category){
+
+    const categoryBtns = categories.map(function (category) {
         return `<button type="button" class="filter-btn" data-id=${category}>${category}</button>`
     })
-    .join("")
+        .join("")
 
     container.innerHTML = categoryBtns;
     const filterBtns = container.querySelectorAll('.filter-btn');
     // Filter Items
 
-filterBtns.forEach(function (btn) {
+    filterBtns.forEach(function (btn) {
 
-    btn.addEventListener('click', function (e) {
+        btn.addEventListener('click', function (e) {
 
-        const category = e.currentTarget.dataset.id;
-        const menuCategory = menu.filter(function (menuItem) {
+            const category = e.currentTarget.dataset.id;
+            const menuCategory = menu.filter(function (menuItem) {
 
-            if (menuItem.category === category) return menuItem;
+                if (menuItem.category === category) return menuItem;
 
+            });
+
+            if (category === 'all') return displayMenuItems(menu);
+            else return displayMenuItems(menuCategory);
         });
-
-        if (category === 'all') return displayMenuItems(menu);
-        else return displayMenuItems(menuCategory);
     });
-});
 
 
 
