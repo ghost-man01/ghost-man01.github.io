@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.d88bb831.css",
-    "main.js": "/static/js/main.776e0363.js",
-    "static/js/453.2b07c951.chunk.js": "/static/js/453.2b07c951.chunk.js",
-    "static/media/maleProfile.jpg": "/static/media/maleProfile.657c4196488ead649e93.jpg",
-    "static/media/femaleProfile.jpg": "/static/media/femaleProfile.48d77dc2519df08d5cc5.jpg",
-    "index.html": "/index.html",
-    "main.d88bb831.css.map": "/static/css/main.d88bb831.css.map",
-    "main.776e0363.js.map": "/static/js/main.776e0363.js.map",
-    "453.2b07c951.chunk.js.map": "/static/js/453.2b07c951.chunk.js.map"
+    "main.css": "/github.io/react/static/css/main.d88bb831.css",
+    "main.js": "/github.io/react/static/js/main.1636b3b3.js",
+    "static/js/453.2b07c951.chunk.js": "/github.io/react/static/js/453.2b07c951.chunk.js",
+    "static/media/maleProfile.jpg": "/github.io/react/static/media/maleProfile.657c4196488ead649e93.jpg",
+    "static/media/femaleProfile.jpg": "/github.io/react/static/media/femaleProfile.48d77dc2519df08d5cc5.jpg",
+    "index.html": "/github.io/react/index.html",
+    "main.d88bb831.css.map": "/github.io/react/static/css/main.d88bb831.css.map",
+    "main.1636b3b3.js.map": "/github.io/react/static/js/main.1636b3b3.js.map",
+    "453.2b07c951.chunk.js.map": "/github.io/react/static/js/453.2b07c951.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d88bb831.css",
-    "static/js/main.776e0363.js"
+    "static/js/main.1636b3b3.js"
   ]
 }
