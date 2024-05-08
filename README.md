@@ -2,8 +2,7 @@
 
 I am a passionate B.Tech CS student at PSIT Kanpur, driven by a curiosity for technology and a love for writing. My journey involves delving into the world of computer science, exploring new ideas, and sharing my insights with the community.
 
-![Siddhant Shukla's Stats](https://github-readme-stats.vercel.app/api?username=ghost__man01&theme=vue-dark&show_icons=true&hide_border=true&count_private=true)
-
+[![ghost__man01's GitHub stats](https://github-readme-stats.vercel.app/api?username=ghost__man01)](https://github.com/ghost__man01/github-readme-stats)
 ## 🚀 About Me
 
 - 🔭 I'm currently pursuing my Master's in Computer Science at IIT Kharagpur.
