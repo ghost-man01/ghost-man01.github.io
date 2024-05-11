@@ -2,7 +2,8 @@
 
 I am a passionate B.Tech CS student at PSIT Kanpur, driven by a curiosity for technology and a love for writing. My journey involves delving into the world of computer science, exploring new ideas, and sharing my insights with the community.
 
-[![ghost-man01's  GitHub stats](https://github-readme-stats.vercel.app/api?username=ghost-man01)](https://github.com/ghost-man01/github-readme-stats)
+![Siddhant Shukla's Stats](https://github-readme-stats.vercel.app/api?username=ghost-man01&theme=vue-dark&show_icons=true&hide_border=true&count_private=true)
+
 ## 🚀 About Me
 
 - 🔭 I'm currently pursuing my Bachelor's in Computer&Science(Artificial Intelligence) from PSIT Kanpur.
@@ -15,7 +16,7 @@ I am a passionate B.Tech CS student at PSIT Kanpur, driven by a curiosity for te
 - CTF's
 
 ## Tech Stack
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,react,nodejs)](https://skillicons.dev)
 
 ## 🌱 Currently Exploring
 
@@ -25,10 +26,6 @@ I am a passionate B.Tech CS student at PSIT Kanpur, driven by a curiosity for te
   - Styling with Tailwind CSS to create modern and responsive user interfaces.
   - Building server-side applications with Django, a powerful Python web framework.
   - Diving into PostgreSQL for efficient and scalable database management.
-
- ## 🏆 Achievements
-
-- 🌟 Completed Hacktoberfest 2023 - Contributed to open source projects and celebrated the spirit of collaboration.
 
 
 ## 📬 Get in Touch
