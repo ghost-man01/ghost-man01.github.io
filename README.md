@@ -2,17 +2,17 @@
 
 I am a passionate B.Tech CS student at PSIT Kanpur, driven by a curiosity for technology and a love for writing. My journey involves delving into the world of computer science, exploring new ideas, and sharing my insights with the community.
 
-[![ghost__man01's GitHub stats](https://github-readme-stats.vercel.app/api?username=ghost__man01)](https://github.com/ghost__man01/github-readme-stats)
+[![ghost-man01's  GitHub stats](https://github-readme-stats.vercel.app/api?username=ghost-man01)](https://github.com/ghost-man01/github-readme-stats)
 ## 🚀 About Me
 
-- 🔭 I'm currently pursuing my Master's in Computer Science at IIT Kharagpur.
-- 📝 I write in-depth, long-form articles on my website [theenthusiast.dev](https://theenthusiast.dev), accumulating over 20k views within just 2 months.
-- 🌐 Proud member of the [Hackernoon Blogging Fellowship](https://hackernoon.com/), contributing to the tech community.
-- ✍️ Content Writer at [freeCodeCamp](https://www.freecodecamp.org/), gearing up to share valuable insights with the global coding community.
+- 🔭 I'm currently pursuing my Bachelor's in Computer&Science(Artificial Intelligence) from PSIT Kanpur.
+- I've worked on several projects on JavaScript and ReactJs [Meals Application](https://ghost-man01.github.io/mealsapp/)
+- Some of my Projects are [Van's Application](https://cheerful-stardust-22b7cb.netlify.app/) and [Employee App](https://ghost-man01.github.io/employeeapp/)
 
-## My Articles
-- [JavaScript Engine and Runtime Explained](https://www.freecodecamp.org/news/javascript-engine-and-runtime-explained/)
-
+## Some other INTERESTs
+- CyberSecurity
+- Web Security
+- CTF's
 
 ## Tech Stack
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
@@ -34,7 +34,7 @@ I am a passionate B.Tech CS student at PSIT Kanpur, driven by a curiosity for te
 ## 📬 Get in Touch
 
 - Connect with me on [Twitter](https://twitter.com/ghost__man01)
-
+- Connect with me on [Linkedin](https://linkedin.com/in/sid-d-hant)
 Thanks for stopping by! Let's connect and explore the fascinating world of technology together. 🚀
 
 
