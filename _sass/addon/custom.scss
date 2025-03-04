@@ -1,0 +1,198 @@
+/* Full-width wrapper for GIF in post layout */
+.full-width-gif-wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+}
+
+/* GIF in post layout */
+.post-header-gif {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  margin: 1.5rem 0;
+}
+
+.layout-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title card GIF on homepage */
+.post-card {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.post-preview {
+  display: flex;
+  width: 100%;
+}
+
+.post-card-img {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.post-card-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Post title and metadata */
+.post-header {
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.post-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+/* Metadata wrapper */
+.post-meta-wrapper {
+  font-size: 0.9rem;
+  color: #adb5bd;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Top metadata (date and read time on the same line) */
+.post-meta-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Date (left) */
+.post-meta-date {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Author (below date on the left) */
+.post-meta-author {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Read time (right) */
+.post-meta-right {
+  display: inline-flex;
+  align-items: center;
+}
+
+.post-meta i {
+  color: #adb5bd;
+  margin-right: 0.5rem;
+}
+
+.post-desc {
+  font-size: 1.1rem;
+  color: #adb5bd;
+  line-height: 1.6;
+}
+
+.content {
+  padding: 2rem 1rem;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #e9ecef;
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Homepage card body */
+.card-body {
+  padding: 1rem;
+}
+
+/* Homepage card title */
+.post-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #ffffff;
+}
+
+.post-card-title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.post-card-title a:hover {
+  text-decoration: underline;
+}
+
+/* Homepage card text (description) */
+.card-text.content {
+  font-size: 1rem;
+  color: #adb5bd;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .post-card-img {
+    padding-top: 75%; /* 4:3 aspect ratio for mobile */
+    margin-bottom: 1rem;
+  }
+  .post-header-gif {
+    padding-top: 75%;
+  }
+  .post-title {
+    font-size: 2rem;
+  }
+  .post-desc {
+    font-size: 1rem;
+  }
+  .post-meta-wrapper {
+    font-size: 0.85rem;
+  }
+  .post-meta-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .post-meta-right {
+    align-self: flex-start;
+  }
+  .post-card-title {
+    font-size: 1.25rem;
+  }
+  .card-text.content {
+    font-size: 0.9rem;
+  }
+  .post-preview {
+    flex-direction: column !important; /* Stack on mobile */
+  }
+}

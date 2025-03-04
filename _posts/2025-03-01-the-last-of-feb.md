@@ -1,9 +1,23 @@
 ---
 layout: post
 title: "The Last of February"
-date: 2025-03-01 08:00:00 -0800
+date: 2025-02-04 08:00:00 -0800
 categories: ["Bug Bounty"]
 tags: ["Bug Bounty", "Security"]
+image: /assets/images/death-note.gif
 ---
 
-Hello, world! This is my first blog post using the Chirpy theme on GitHub Pages. Stay tuned for more content!
+---
+
+### Table of Contents
+
+- ##### [The Bugs Reported](#the-bugs-reported)
+- ##### [The Devotion](#the-devotion)
+- ##### [A Good Thing](#a-good-thing)
+- ##### [THE ONE THING](#the-one-thing)
+- ##### [The Next Thing](#the-next-thing)
+
+---
+
+### The Bugs Reported
+
