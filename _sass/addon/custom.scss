@@ -31,15 +31,39 @@
 }
 
 /* Title card GIF on homepage */
-.post-card {
+.card-wrapper.card.post-card {
+  transition: box-shadow 0.3s ease;
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+    opacity: 1 !important;
+    z-index: 2;
+  }
+}
+
+/* Neutralize default Chirpy hover effects on card and card-wrapper */
+.card,
+.card-wrapper {
+  &:hover {
+    opacity: 1 !important;
+  }
 }
 
 .post-preview {
   display: flex;
   width: 100%;
+  opacity: 1;
+}
+
+/* Neutralize default Chirpy hover effects on post-preview */
+.post-preview:hover {
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .post-card-img {
@@ -48,6 +72,14 @@
   padding-top: 56.25%; /* 16:9 aspect ratio */
   overflow: hidden;
   border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* GIF pop-out effect when hovering anywhere on the card */
+.card-wrapper.card.post-card:hover .post-card-img {
+  transform: scale(1.05) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+  z-index: 3; /* Ensure GIF appears above other elements */
 }
 
 .post-card-img img {
@@ -59,7 +91,7 @@
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 1 !important;
 }
 
 /* Post title and metadata */
@@ -133,6 +165,7 @@
 /* Homepage card body */
 .card-body {
   padding: 1rem;
+  opacity: 1 !important;
 }
 
 /* Homepage card title */
@@ -195,4 +228,4 @@
   .post-preview {
     flex-direction: column !important; /* Stack on mobile */
   }
-}
+}s
