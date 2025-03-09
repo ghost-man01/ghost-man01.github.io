@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Last of February"
-date: 2025-02-04 08:00:00 -0800
+date: 2025-03-04 08:00:00 -0800
 pin: false
 categories: ["Bug Bounty"]
 tags: ["Bug Bounty", "Security", "Hack The Box"]
