@@ -1,0 +1,308 @@
+/* =========================================================
+   GHOST — HALL OF FAME
+   ========================================================= */
+
+.hof-page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* HERO
+--------------------------------------------------------- */
+
+.hof-hero {
+  padding: 45px 0 35px;
+  position: relative;
+}
+
+.hof-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  opacity: 0.65;
+  margin-bottom: 14px;
+}
+
+.hof-hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin: 0 0 15px;
+}
+
+.hof-hero h1 span {
+  font-size: 0.65em;
+}
+
+.hof-lead {
+  max-width: 620px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.hof-line {
+  width: 100%;
+  height: 1px;
+  margin-top: 35px;
+  background: currentColor;
+  opacity: 0.12;
+}
+
+/* STATS
+--------------------------------------------------------- */
+
+.hof-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin: 15px 0 75px;
+  border: 1px solid rgba(127, 127, 127, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hof-stat {
+  padding: 25px 20px;
+  text-align: center;
+  background: rgba(127, 127, 127, 0.035);
+}
+
+.hof-stat strong {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.hof-stat span {
+  font-size: 0.78rem;
+  opacity: 0.55;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* SECTION
+--------------------------------------------------------- */
+
+.hof-section {
+  margin-bottom: 80px;
+}
+
+.hof-section-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 28px;
+}
+
+.hof-section-title span {
+  font-family: monospace;
+  font-size: 0.75rem;
+  opacity: 0.45;
+}
+
+.hof-section-title h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+/* CARDS
+--------------------------------------------------------- */
+
+.hof-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.hof-card {
+  position: relative;
+  padding: 28px;
+  border: 1px solid rgba(127, 127, 127, 0.17);
+  border-radius: 14px;
+  background: rgba(127, 127, 127, 0.025);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.hof-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(127, 127, 127, 0.35);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.hof-card.featured {
+  border-width: 1px;
+}
+
+.hof-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.hof-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 1.35rem;
+  background: rgba(127, 127, 127, 0.08);
+}
+
+.hof-year {
+  font-family: monospace;
+  font-size: 0.75rem;
+  opacity: 0.45;
+}
+
+.hof-card h3 {
+  margin: 0 0 7px;
+  font-size: 1.35rem;
+}
+
+.hof-award {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  opacity: 0.65;
+  margin-bottom: 18px;
+}
+
+.hof-card p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  opacity: 0.65;
+  min-height: 52px;
+}
+
+.hof-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding-top: 17px;
+  border-top: 1px solid rgba(127, 127, 127, 0.12);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.5;
+}
+
+/* TIMELINE
+--------------------------------------------------------- */
+
+.hof-timeline {
+  position: relative;
+  margin-left: 8px;
+  padding-left: 35px;
+  border-left: 1px solid rgba(127, 127, 127, 0.2);
+}
+
+.hof-event {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.hof-event:last-child {
+  padding-bottom: 0;
+}
+
+.hof-dot {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  left: -41px;
+  top: 5px;
+  background: currentColor;
+  box-shadow: 0 0 0 5px var(--main-bg);
+}
+
+.hof-event-year {
+  font-family: monospace;
+  font-size: 0.72rem;
+  opacity: 0.45;
+}
+
+.hof-event-content h3 {
+  margin: 5px 0 5px;
+  font-size: 1rem;
+}
+
+.hof-event-content p {
+  margin: 0;
+  font-size: 0.88rem;
+  opacity: 0.6;
+}
+
+/* DISCLOSURE
+--------------------------------------------------------- */
+
+.hof-disclosure {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 25px;
+  align-items: start;
+  padding: 35px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(127, 127, 127, 0.17);
+  border-radius: 15px;
+  background: rgba(127, 127, 127, 0.035);
+}
+
+.hof-disclosure-icon {
+  font-size: 2rem;
+}
+
+.hof-disclosure h2 {
+  margin: 10px 0 10px;
+  font-size: 1.45rem;
+}
+
+.hof-disclosure p {
+  margin: 0;
+  max-width: 720px;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  opacity: 0.65;
+}
+
+/* MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .hof-hero {
+    padding-top: 25px;
+  }
+
+  .hof-stats {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 55px;
+  }
+
+  .hof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hof-section {
+    margin-bottom: 60px;
+  }
+
+  .hof-card {
+    padding: 23px;
+  }
+
+  .hof-disclosure {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+}
