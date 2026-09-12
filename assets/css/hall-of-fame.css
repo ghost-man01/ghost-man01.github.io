@@ -1,5 +1,6 @@
 /* =========================================================
-   GHOST — HALL OF FAME
+   HALL OF FAME
+   Security Researcher Portfolio
    ========================================================= */
 
 .hof-page {
@@ -7,302 +8,763 @@
   margin: 0 auto;
 }
 
-/* HERO
---------------------------------------------------------- */
+/* =========================================================
+   HERO
+   ========================================================= */
 
 .hof-hero {
-  padding: 45px 0 35px;
-  position: relative;
+  padding: 20px 0 55px;
 }
 
-.hof-badge {
-  display: inline-block;
+.hof-eyebrow,
+.hof-label {
+  font-family: var(--font-family-monospace);
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.16em;
-  opacity: 0.65;
-  margin-bottom: 14px;
+  color: var(--text-muted-color);
+}
+
+.hof-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 18px;
+}
+
+.hof-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.55);
 }
 
 .hof-hero h1 {
-  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  margin: 0;
+  max-width: 850px;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
   font-weight: 800;
-  letter-spacing: -0.04em;
-  margin: 0 0 15px;
 }
 
 .hof-hero h1 span {
-  font-size: 0.65em;
-}
-
-.hof-lead {
-  max-width: 620px;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  opacity: 0.7;
-  margin: 0;
-}
-
-.hof-line {
-  width: 100%;
-  height: 1px;
-  margin-top: 35px;
-  background: currentColor;
-  opacity: 0.12;
-}
-
-/* STATS
---------------------------------------------------------- */
-
-.hof-stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  margin: 15px 0 75px;
-  border: 1px solid rgba(127, 127, 127, 0.15);
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.hof-stat {
-  padding: 25px 20px;
-  text-align: center;
-  background: rgba(127, 127, 127, 0.035);
-}
-
-.hof-stat strong {
-  display: block;
-  font-size: 1.7rem;
-  font-weight: 800;
-  margin-bottom: 5px;
-}
-
-.hof-stat span {
-  font-size: 0.78rem;
-  opacity: 0.55;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-/* SECTION
---------------------------------------------------------- */
-
-.hof-section {
-  margin-bottom: 80px;
-}
-
-.hof-section-title {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 28px;
-}
-
-.hof-section-title span {
-  font-family: monospace;
-  font-size: 0.75rem;
   opacity: 0.45;
 }
 
-.hof-section-title h2 {
-  margin: 0;
+.hof-intro {
+  max-width: 650px;
+  margin: 28px 0 25px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-muted-color);
+}
+
+.hof-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.hof-hero-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 11px;
+  border: 1px solid var(--main-border-color);
+  border-radius: 7px;
+  font-size: 0.78rem;
+  color: var(--text-muted-color);
+}
+
+.hof-hero-meta i {
+  font-size: 0.72rem;
+}
+
+/* =========================================================
+   FEATURED PAYTM CARD
+   ========================================================= */
+
+.hof-feature {
+  position: relative;
+  overflow: hidden;
+  padding: 32px;
+  margin-bottom: 85px;
+  border: 1px solid var(--main-border-color);
+  border-radius: 16px;
+  background:
+    linear-gradient(135deg, rgba(127, 127, 127, 0.09), transparent 55%),
+    var(--card-bg);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.hof-feature::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(127, 127, 127, 0.08);
+  filter: blur(20px);
+}
+
+.hof-feature-top {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hof-feature-top h2 {
+  margin: 7px 0 0;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+}
+
+.hof-feature-year {
+  font-family: var(--font-family-monospace);
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.12;
+}
+
+.hof-feature-body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+  padding-top: 28px;
+  border-top: 1px solid var(--main-border-color);
+}
+
+.hof-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 65px;
+  width: 65px;
+  height: 65px;
+  border: 1px solid var(--main-border-color);
+  border-radius: 14px;
   font-size: 1.6rem;
 }
 
-/* CARDS
---------------------------------------------------------- */
+.hof-feature-content {
+  max-width: 720px;
+}
 
-.hof-grid {
+.hof-feature-content h3 {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+}
+
+.hof-feature-content p {
+  margin: 0 0 20px;
+  color: var(--text-muted-color);
+  line-height: 1.7;
+}
+
+.hof-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 14px;
+  border: 1px solid var(--main-border-color);
+  border-radius: 7px;
+  font-family: var(--font-family-monospace);
+  font-size: 0.76rem;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.hof-button:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.hof-section {
+  margin-bottom: 90px;
+}
+
+.hof-section-heading {
+  margin-bottom: 35px;
+}
+
+.hof-section-heading h2 {
+  margin: 6px 0 0;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+}
+
+.hof-section-description {
+  max-width: 650px;
+  margin: -18px 0 30px;
+  color: var(--text-muted-color);
+}
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+
+.hof-timeline {
+  position: relative;
+  margin-left: 10px;
+  padding-left: 35px;
+}
+
+.hof-timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: var(--main-border-color);
+}
+
+.hof-timeline-item {
+  position: relative;
+  display: flex;
+  min-height: 105px;
+}
+
+.hof-timeline-marker {
+  position: absolute;
+  left: -35px;
+  top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  background: var(--card-bg);
+}
+
+.hof-timeline-marker span {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--text-color);
+}
+
+.hof-timeline-content {
+  padding-bottom: 35px;
+}
+
+.hof-date {
+  font-family: var(--font-family-monospace);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted-color);
+}
+
+.hof-timeline-content h3 {
+  margin: 7px 0 4px;
+  font-size: 1.15rem;
+}
+
+.hof-timeline-content p {
+  margin: 0;
+  color: var(--text-muted-color);
+  font-size: 0.9rem;
+}
+
+.hof-timeline-final .hof-timeline-marker {
+  width: 15px;
+  height: 15px;
+  left: -37px;
+  border-width: 2px;
+}
+
+/* =========================================================
+   RECOGNITION CARDS
+   ========================================================= */
+
+.hof-recognition-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
 
-.hof-card {
-  position: relative;
-  padding: 28px;
-  border: 1px solid rgba(127, 127, 127, 0.17);
-  border-radius: 14px;
-  background: rgba(127, 127, 127, 0.025);
+.hof-recognition-card {
+  min-height: 275px;
+  display: flex;
+  flex-direction: column;
+  padding: 23px;
+  border: 1px solid var(--main-border-color);
+  border-radius: 13px;
+  background: var(--card-bg);
   transition:
-    transform 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease;
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.hof-card:hover {
+.hof-recognition-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(127, 127, 127, 0.35);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-}
-
-.hof-card.featured {
-  border-width: 1px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 .hof-card-top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-.hof-icon {
-  width: 48px;
-  height: 48px;
+.hof-company-mark {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
+  width: 43px;
+  height: 43px;
+  border: 1px solid var(--main-border-color);
+  border-radius: 10px;
+  font-weight: 800;
+  font-family: var(--font-family-monospace);
+}
+
+.hof-card-status {
+  font-family: var(--font-family-monospace);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted-color);
+}
+
+.hof-recognition-card h3 {
+  margin: 28px 0 8px;
   font-size: 1.35rem;
-  background: rgba(127, 127, 127, 0.08);
 }
 
-.hof-year {
-  font-family: monospace;
-  font-size: 0.75rem;
-  opacity: 0.45;
-}
-
-.hof-card h3 {
-  margin: 0 0 7px;
-  font-size: 1.35rem;
-}
-
-.hof-award {
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  opacity: 0.65;
-  margin-bottom: 18px;
-}
-
-.hof-card p {
-  font-size: 0.92rem;
-  line-height: 1.7;
-  opacity: 0.65;
-  min-height: 52px;
-}
-
-.hof-card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 25px;
-  padding-top: 17px;
-  border-top: 1px solid rgba(127, 127, 127, 0.12);
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  opacity: 0.5;
-}
-
-/* TIMELINE
---------------------------------------------------------- */
-
-.hof-timeline {
-  position: relative;
-  margin-left: 8px;
-  padding-left: 35px;
-  border-left: 1px solid rgba(127, 127, 127, 0.2);
-}
-
-.hof-event {
-  position: relative;
-  padding-bottom: 40px;
-}
-
-.hof-event:last-child {
-  padding-bottom: 0;
-}
-
-.hof-dot {
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  left: -41px;
-  top: 5px;
-  background: currentColor;
-  box-shadow: 0 0 0 5px var(--main-bg);
-}
-
-.hof-event-year {
-  font-family: monospace;
-  font-size: 0.72rem;
-  opacity: 0.45;
-}
-
-.hof-event-content h3 {
-  margin: 5px 0 5px;
-  font-size: 1rem;
-}
-
-.hof-event-content p {
+.hof-recognition-card p {
   margin: 0;
+  color: var(--text-muted-color);
   font-size: 0.88rem;
-  opacity: 0.6;
+  line-height: 1.7;
 }
 
-/* DISCLOSURE
---------------------------------------------------------- */
+.hof-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 25px;
+  font-family: var(--font-family-monospace);
+  font-size: 0.72rem;
+  text-decoration: none;
+}
+
+.hof-card-link:hover {
+  text-decoration: none;
+}
+
+.hof-no-link {
+  opacity: 0.7;
+}
+
+.hof-no-link i {
+  margin-left: 2px;
+}
+
+.hof-card-highlight {
+  margin-top: auto;
+  padding-top: 22px;
+}
+
+.hof-card-highlight span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.hof-card-highlight small {
+  color: var(--text-muted-color);
+  font-size: 0.72rem;
+}
+/* =========================================================
+   CERTIFICATES
+   ========================================================= */
+
+.hof-certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.hof-certificate {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  width: 100%;
+  aspect-ratio: 4 / 3;
+
+  border: 1px solid var(--main-border-color);
+  border-radius: 14px;
+
+  background: var(--card-bg);
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.hof-certificate:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Keep every certificate the same visual size */
+.hof-certificate img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  padding: 12px;
+
+  transition: transform 0.35s ease;
+}
+
+.hof-certificate:hover img {
+  transform: scale(1.025);
+}
+
+/* Bottom information bar */
+.hof-certificate-overlay {
+  position: absolute;
+
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 13px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+
+  background: rgba(0, 0, 0, 0.72);
+
+  color: #fff;
+
+  backdrop-filter: blur(8px);
+
+  font-family: var(--font-family-monospace);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* =========================================================
+   CERTIFICATE MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+  .hof-certificate-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  .hof-certificate {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 600px) {
+  .hof-certificate-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* =========================================================
+   DISCLOSURE
+   ========================================================= */
 
 .hof-disclosure {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 25px;
-  align-items: start;
-  padding: 35px;
-  margin-bottom: 40px;
-  border: 1px solid rgba(127, 127, 127, 0.17);
-  border-radius: 15px;
-  background: rgba(127, 127, 127, 0.035);
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 30px;
+  margin-bottom: 45px;
+  border: 1px solid var(--main-border-color);
+  border-radius: 14px;
 }
 
 .hof-disclosure-icon {
-  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 50px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--main-border-color);
+  border-radius: 11px;
 }
 
 .hof-disclosure h2 {
-  margin: 10px 0 10px;
-  font-size: 1.45rem;
+  margin: 5px 0 8px;
+  font-size: 1.35rem;
 }
 
 .hof-disclosure p {
+  max-width: 750px;
   margin: 0;
-  max-width: 720px;
-  font-size: 0.9rem;
-  line-height: 1.8;
-  opacity: 0.65;
+  color: var(--text-muted-color);
+  line-height: 1.7;
 }
 
-/* MOBILE
---------------------------------------------------------- */
+/* =========================================================
+   END
+   ========================================================= */
 
-@media (max-width: 768px) {
-  .hof-hero {
-    padding-top: 25px;
+.hof-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 0 30px;
+  color: var(--text-muted-color);
+  font-family: var(--font-family-monospace);
+  font-size: 0.72rem;
+  text-align: center;
+}
+
+.hof-terminal-prompt {
+  font-weight: 800;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 800px) {
+  .hof-feature {
+    padding: 24px;
   }
 
-  .hof-stats {
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 55px;
+  .hof-feature-year {
+    font-size: 2.4rem;
   }
 
-  .hof-grid {
+  .hof-recognition-grid {
     grid-template-columns: 1fr;
   }
 
-  .hof-section {
-    margin-bottom: 60px;
+  .hof-certificate-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hof-hero {
+    padding-top: 5px;
   }
 
-  .hof-card {
-    padding: 23px;
+  .hof-hero h1 {
+    font-size: 2.7rem;
+  }
+
+  .hof-hero-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hof-feature-body {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hof-feature-top {
+    align-items: flex-start;
+  }
+
+  .hof-feature-year {
+    display: none;
   }
 
   .hof-disclosure {
+    flex-direction: column;
+    padding: 23px;
+  }
+}
+
+/* =========================================================
+   RECOGNITION CARDS
+   ========================================================= */
+
+.hof-recognition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.hof-recognition-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 330px;
+  padding: 26px;
+
+  border: 1px solid var(--main-border-color);
+  border-radius: 14px;
+
+  background: var(--card-bg);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.hof-recognition-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.hof-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.hof-company-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  border-radius: 10px;
+
+  background: var(--main-bg);
+  border: 1px solid var(--main-border-color);
+
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.hof-card-status {
+  font-family: var(--font-family-monospace);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.hof-recognition-card h3 {
+  margin-bottom: 12px;
+}
+
+.hof-recognition-card p {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.hof-card-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: auto;
+  padding-top: 14px;
+
+  border-top: 1px solid var(--main-border-color);
+
+  font-family: var(--font-family-monospace);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.hof-card-link i {
+  transition: transform 0.2s ease;
+}
+
+.hof-card-link:hover i {
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   CLICKABLE RECOGNITION CARDS
+   ========================================================= */
+
+.hof-clickable-card {
+  cursor: pointer;
+}
+
+.hof-popup-link {
+  color: inherit;
+}
+
+.hof-lightbox-source {
+  display: none !important;
+}
+
+/* =========================================================
+   CARD HIGHLIGHT
+   ========================================================= */
+
+.hof-card-highlight {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+.hof-card-highlight span {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.hof-card-highlight small {
+  font-family: var(--font-family-monospace);
+  font-size: 0.62rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 1100px) {
+  .hof-recognition-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hof-certificate-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .hof-recognition-grid {
     grid-template-columns: 1fr;
-    padding: 25px;
+  }
+
+  .hof-certificate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hof-recognition-card {
+    min-height: 0;
   }
 }
