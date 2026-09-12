@@ -32,7 +32,7 @@ order: 3
 
   </section>
 
-  <!-- PAYTM FEATURE -->
+
   <!-- RECOGNITION -->
   <section class="hof-feature">
 
@@ -94,7 +94,7 @@ order: 3
         </article>
 
 
-        <!-- Open Bug Bounty-->
+        <!-- OPEN BUG BOUNTY -->
         <article class="hof-recognition-card hof-clickable-card" data-hof-lightbox>
 
           <div class="hof-card-top">
@@ -121,16 +121,16 @@ order: 3
             <small>Security Contribution</small>
           </div>
 
-          <!-- Image used by the popup -->
-          <img class="hof-lightbox-source" src="{{ '/assets/images/hall-of-fame/giftcard.png' | relative_url }}"
-            alt="Amazon security contribution">
-
-          <div class="hof-card-link hof-popup-link">
-            View Recognition
+          <div class="hof-card-preview">
+            <img src="{{ '/assets/images/hall-of-fame/giftcard.png' | relative_url }}"
+              alt="OpenBugBounty Amazon $100 Gift Card" loading="lazy">
           </div>
 
-        </article>
+          <!-- <div class="hof-card-link hof-popup-link">
+            View Recognition
+          </div> -->
 
+        </article>
 
         <!-- MERCEDES-BENZ -->
         <article class="hof-recognition-card hof-clickable-card" data-hof-lightbox>
@@ -159,13 +159,14 @@ order: 3
             <small>Security Validation</small>
           </div>
 
-          <!-- Mercedes validation email -->
-          <img class="hof-lightbox-source" src="{{ '/assets/images/hall-of-fame/mercedes.png' | relative_url }}"
-            alt="Mercedes-Benz security validation email">
-
-          <div class="hof-card-link hof-popup-link">
-            View Validation
+          <div class="hof-card-preview">
+            <img src="{{ '/assets/images/hall-of-fame/mercedes-benz/one.png' | relative_url }}"
+              alt="Mercedes-Benz security validation email" loading="lazy">
           </div>
+
+          <!-- <div class="hof-card-link hof-popup-link">
+            View Validation
+          </div> -->
 
         </article>
 
